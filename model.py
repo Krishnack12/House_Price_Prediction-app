@@ -51,4 +51,5 @@ model.fit(X, y)
 
 joblib.dump(model, "house_model.pkl")
 
-print("\n✅ Model trained and saved successfully!")
+print("\n Model trained and saved successfully!")
+
