@@ -29,7 +29,7 @@ To run this project locally, follow these steps:
 1.	Download the project as a ZIP file from the GitHub repository and extract the ZIP file to your system
 2.	Open the project folder in VS Code or any code editor.
 3.	Install the required libraries: pip install -r requirements.txt
-4.	Run the Streamlit application: streamlit run app.py
+4.	Run the Streamlit application: python -m streamlit run app.py
 5.	Open the browser and use the House Price Prediction web application.
 
 ----
