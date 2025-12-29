@@ -7,7 +7,7 @@ model = joblib.load("house_model.pkl")
 
 
 st.set_page_config(
-    page_title="House Price Prediction",
+    page_title="Home worth",
     layout="wide"
 )
 
@@ -117,7 +117,7 @@ section[data-testid="stSidebar"] {
 """, unsafe_allow_html=True)
 
 
-st.markdown("<div class='header'>House Price Prediction System</div>", unsafe_allow_html=True)
+st.markdown("<div class='header'>Home worth</div>", unsafe_allow_html=True)
 
 
 st.sidebar.markdown("<div class='sidebar-header'>Go To</div>", unsafe_allow_html=True)
@@ -201,3 +201,4 @@ elif page == "About":
     **Dataset:** Bangalore House Price Dataset
     """)
     st.markdown("</div>", unsafe_allow_html=True)
+
