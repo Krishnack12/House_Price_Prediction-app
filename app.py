@@ -1,13 +1,17 @@
 import streamlit as st
 import numpy as np
 import joblib
+import os
 
 
-model = joblib.load("house_model.pkl")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "house_model.pkl")
+
+model = joblib.load(MODEL_PATH)
 
 
 st.set_page_config(
-    page_title="Home worth",
+    page_title="Home Worth",
     layout="wide"
 )
 
@@ -201,5 +205,3 @@ elif page == "About":
     **Dataset:** Bangalore House Price Dataset
     """)
     st.markdown("</div>", unsafe_allow_html=True)
-
-
